@@ -20,4 +20,8 @@ contract HelloWorld {
         require(msg.sender == owner);
         message = _message;
     }
+
+    function getOwner() public view returns(address){
+        return owner;
+    }
 }
